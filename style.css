@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --p-color: #04ddb2;
+  --s-color: #333333;
+  --date-color: #989898;
+}
+.container {
+  max-width: 70vw;
+  margin-inline: auto;
+  overflow: hidden;
+}
+nav {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 29px 104px;
+  /* opacity: 0.9; */
+  z-index: 99;
+}
+nav > h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--s-color);
+}
+nav>h1:hover{
+  cursor: pointer;
+
+}
+nav>ul>li:hover{
+  cursor: pointer;
+  color: #000000;
+  
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  color: var(--s-color);
+}
+.blak {
+  color: #000000;
+  font-weight: 600;
+}
+li {
+  list-style: none;
+  margin: 0 24px;
+  font-size: 18px;
+  text-align: start;
+  color: var(--date-color);
+  font-weight: 600;
+  transition: all 1s ease;
+}
+.download-btn {
+  color: #fff;
+  font-size: 18px;
+  background-color: var(--p-color);
+  padding: 13px 22px;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.download-btn:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+}
+.topic {
+  margin: 3% auto;
+  text-align: center;
+  width: 100%;
+  color: var(--s-color);
+}
+.topic > h1 {
+  padding: 0 236px 12px 236px;
+  font-size: 80px;
+  text-align: center;
+}
+.topic > h1 > span {
+  color: var(--p-color);
+}
+.topic > p {
+  margin: 0 211px 40px 211px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 46.6px;
+}
+.cart{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card{
+  width: 600px;
+  height: 631px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 80px 80px -50px, rgba(0, 0, 0, 0.03) 0px 0px 15px 0px;
+  border-radius: 32px;
+  margin: 28px;
+  transition: all 0.5s;
+}
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.cardphoto>img{
+  width: 600px;
+  height: 315px;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+.cardtext{
+  color: var(--s-color);
+  margin: 0 40px;
+}
+.cardtext>h2{
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  line-height: 39.12px;
+}
+.cardtext>p{
+  font-size: 24px;
+  margin-bottom: 57px;
+  line-height: 40.08px;
+}
+.date{
+  color: var(--date-color);
+  font-size: 20px;
+  
+}
+.cardlast{
+  margin-bottom: 93px;
+
+}
+.cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--s-color);
+}
+.cta h1{
+  text-align: center;
+  font-size: 8vh;
+  width: 30vw;
+  margin: 120px 652px 48px 652px;
+}
+.cta .btn2{
+  color: #fff;
+  background-color: var(--p-color);
+  padding: 15px 26px;
+  border-radius: 30px;
+  margin-bottom: 140px;
+  font-size: 24px;
+  text-align: center;
+  transition: all 0.7s ease;
+}
+.cta .btn2:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+}
+.footer{
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 113px 108px;
+}
+.flogo{
+  margin-bottom: 3vh;
+  font-size: 2.8vh;
+  cursor: pointer;
+}
+
+.sect{
+  display: flex;
+  justify-content: space-between;  
+  flex-direction: column;
+}
+.sect1 p{
+  width: 11vw;
+  margin-bottom: 3vh;
+  cursor: pointer;
+}
+.sect h1{
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 3vh;
+  cursor: pointer;
+  color: var(--s-color);
+  transition: all 0.5s ease;
+}
+.sect h1:hover{
+  color: #000000;
+  transform: scale(1.07);
+}
+.fhead h1{
+  font-weight: 700;
+  margin-bottom: 3.5vh;
+  cursor: default;
+  color: #000000;
+}
+.fhead h1:hover{
+  transform: scale(1);
+}
+.sect5{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.fa-brands{
+  color: #fff;
+  margin: 10px;
+  padding: 11px;
+  background-color: #04ddb2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.fa-brands:hover{
+  transform: scale(1.09);
+}
